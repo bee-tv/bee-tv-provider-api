@@ -7,13 +7,13 @@ object EmptyDetailContent : DetailContent
 data class DefaultDetailContent(
     val id: String,
     val title: String,
-    val subtitle: String,
-    val desc: String,
-    val bgImage: String,
-    val duration: Long,
-    val category: String,
-    val releaseDate: Long,
     val sourceGroup: List<MediaSourceGroup>,
+    val subtitle: String = "",
+    val desc: String = "",
+    val bgImage: String = "",
+    val duration: Long = 0,
+    val category: String = "",
+    val releaseDate: Long = 0,
 ) : DetailContent
 
 data class MediaSourceGroup(
@@ -23,5 +23,6 @@ data class MediaSourceGroup(
 
 data class MediaSource(
     val name: String,
-    val url: String,
+    val mediaUrl: String,
+    val parseUrl: String,
 )

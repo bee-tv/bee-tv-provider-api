@@ -6,6 +6,6 @@ import com.github.beetv.model.TabContent
 
 interface ChannelProvider {
     suspend fun queryTabs(): List<ChannelTab>
-    suspend fun queryTabContent(tabId: String): TabContent
-    suspend fun queryDetailContent(detailId: String): DetailContent
+    suspend fun queryTabContent(id: String): TabContent
+    suspend fun queryDetailContent(id: String): DetailContent
 }
