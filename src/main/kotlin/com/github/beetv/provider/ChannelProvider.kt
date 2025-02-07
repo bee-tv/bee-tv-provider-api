@@ -8,4 +8,5 @@ interface ChannelProvider {
     suspend fun queryTabs(): List<ChannelTab>
     suspend fun queryTabContent(id: String): TabContent
     suspend fun queryDetailContent(id: String): DetailContent
+    suspend fun parseMediaUrl(url: String): String
 }
