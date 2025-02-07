@@ -24,5 +24,5 @@ data class MediaSourceGroup(
 data class MediaSource(
     val name: String,
     val mediaUrl: String,
-    val parseUrl: String,
+    val parseUrl: String = "",
 )
