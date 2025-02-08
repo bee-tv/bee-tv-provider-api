@@ -5,8 +5,10 @@ sealed interface TabContent
 object EmptyTabContent : TabContent
 
 data class DefaultTabContent(
-    val cellGroups: List<CellGroup>
+    val cellGroups: List<CellGroup>,
+    val columns: Int = 6
 ) : TabContent {
+
     data class CellGroup(
         val title: String,
         val cells: List<Cell>
