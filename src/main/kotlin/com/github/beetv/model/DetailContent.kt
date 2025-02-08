@@ -1,6 +1,6 @@
 package com.github.beetv.model
 
-interface DetailContent
+sealed interface DetailContent
 
 object EmptyDetailContent : DetailContent
 
